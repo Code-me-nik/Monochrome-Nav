@@ -1,0 +1,124 @@
+:root {
+  --c1 : #f0f0f0;
+  --c2: #000000;
+  --c3: #F8F8F8 ;
+}
+
+body {
+  background-color: var(--c3);
+}
+.navbutton{
+  float:right;
+  background-color: var(--c2);
+  border-radius:15px;
+}
+#iconbtn {
+  transition: all .3s;  
+  padding: 10px;
+  font-size: 30px;
+}
+
+#navbar {
+  background-color: var(--c2);
+  height: 600px;
+  width: 280px;
+  transition: all .5s;
+  border-radius: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around ; 
+  flex-direction: column;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  color: var(--c1);
+  background: none;
+}
+figure{
+  display: flex ;
+  justify-content: center ;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 6px solid var(--c3);
+  align-self:center ;
+}
+#navbar{
+  border:2px solid rgb(175, 255, 71);
+}
+.myimg {
+  width: 120px;
+  height: 130px;
+}
+figcaption{
+  text-transform: capitalize;
+  color: var(--c1);
+  font-family: 'Heebo', sans-serif;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  transition: all .1s;
+  position: absolute;
+  top: 160px;
+  align-self: center;
+}
+
+nav {
+  border:2px solid rgb(236, 69, 69);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 400px;
+  margin: 0 0 30px 0;
+}
+.text {
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 19px;
+  position: relative;
+  margin-left:5px;
+  border-radius:15px 0 0 15px;
+  overflow: hidden ;
+}
+.text:hover{
+  overflow: visible ;
+  
+}
+
+.text i {
+  width: 30px;
+  height: 30px;
+  padding: 25px;
+  font-size: 23px;
+}
+.title{
+  padding-left:15px;
+}
+/* this given properties applies on active list button  */
+.text:hover {
+  color: var(--c2);
+  background-color: var(--c3);
+}
+.text:hover .block {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--c2);
+}
+.text:hover .top {
+  top: -20px;
+  border-radius: 0 0 100px 0;
+  box-shadow: 15px 15px 0 10px var(--c3);
+}
+.text:hover .bottom {
+  bottom: -20px;
+  border-radius: 0 100px 0 0;
+  box-shadow: 15px -15px 0 10px var(--c3);
+}
